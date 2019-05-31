@@ -13,7 +13,7 @@
                             <li><a href="./">SERVICIOS</a>
                                 <ul>
                                     <li><a href="{{ route('inscripcion') }}">Inscripciones</a></li>
-                                    <li><a href="{{ url('promociones') }}">Promociones</a></li>
+                                    <li><a href="{{ route('promociones') }}">Promociones</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ url('contacto') }}">CONTACTO</a>
@@ -47,8 +47,10 @@
 
                                 </ul>
                             </li>
+                            @auth
                             <li><a href="{{ route('roles') }}">ROLES</a>
                             </li>
+                            @endauth
                         </ul>
                     </nav>
                 </div>

@@ -24,6 +24,8 @@ Route::post('contacto', 'ContactsController@create')->name('contacto');
 Route::get('roles','RolController@index')->name('roles');
 Route::post('roles', 'RolController@create')->name('roles');
 
+Route::get('promociones', function (){return view('layout.prom');})->name('promociones');
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
