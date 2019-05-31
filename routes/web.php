@@ -12,6 +12,22 @@
 */
 
 Route::get('/', 'FrontController@index');
+Auth::routes();
 
+
+Route::get('inscripcion', 'InscriptionController@index')->name('inscripcion');
+Route::post('inscripcion', 'InscriptionController@create')->name('inscripcion');
+
+Route::get('contacto','ContactsController@index')->name('contacto');
+Route::post('contacto', 'ContactsController@create')->name('contacto');
+
+Route::get('roles','RolController@index')->name('roles');
+Route::post('roles', 'RolController@create')->name('roles');
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/enviar', 'PostsController@form');
 
 
