@@ -2,8 +2,10 @@
 
 @section('content')
 
-<div class="container">
-    <h2>INSCRIPCIONES</h2>
+    <div class="container">
+        <h2>Inscripcion</h2>
+        <div class="panel panel-default">
+
     <form class="form-horizontal" method="POST" action="{{ route('inscripcion') }}">
         {{ csrf_field() }}
         <div class="form-group">
@@ -41,12 +43,12 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">REGISTRAR</button>
+                <button type="submit" class="btn btn-success">REGISTRAR</button>
             </div>
         </div>
     </form>
 </div>
-
+    </div>
     <br/>
 
 @endsection

@@ -1,4 +1,4 @@
-@extends('layout.home')
+@extends('app')
 
 @section('content')
     <main>

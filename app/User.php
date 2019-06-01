@@ -28,4 +28,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function inscription()
+    {
+        return $this->morphMany('App\Models\Inscription', 'inscription');
+    }
 }

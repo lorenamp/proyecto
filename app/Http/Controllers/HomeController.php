@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Role;
+use App\Permission;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('layout.index');
     }
+
+    public function home()
+    {
+        $users = User::all();
+        $roles = Role::all();
+        $permissions = Permission::all();
+        return view('home', compact('users','roles', 'permissions'));
+    }
+
 }
