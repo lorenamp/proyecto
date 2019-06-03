@@ -4,7 +4,7 @@
 
     <div class="container">
         <h2>Inscripcion</h2>
-        <div class="panel panel-default">
+        <div class="panel well">
 
     <form class="form-horizontal" method="POST" action="{{ route('inscripcion') }}">
         {{ csrf_field() }}

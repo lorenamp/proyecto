@@ -15,7 +15,7 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
 
             [
-                'name' => 'crear_rol',
+                'name' => 'crear-rol',
                 'display_name' => 'Crear Role',
                 'description' => '1',
             ],

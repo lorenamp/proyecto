@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Inscription;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
@@ -29,8 +30,4 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function inscription()
-    {
-        return $this->morphMany('App\Models\Inscription', 'inscription');
-    }
 }

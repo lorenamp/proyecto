@@ -20,12 +20,12 @@ class RoleSeeder extends Seeder
                 'description' => '1',
             ],
             [
-                'name' => 'inv',
+                'name' => 'invitado',
                 'display_name' => 'Invitado',
                 'description' => '2',
             ],
             [
-                'name' => 'cli',
+                'name' => 'cliente',
                 'display_name' => 'Cliente',
                 'description' => '3',
             ],

@@ -21,11 +21,11 @@ class ContactsController extends Controller
     {
         $add = new Contact;
         $add->user_id = $request->user()->id;
-        $add->nombre = $request->input('nombre');
-        $add->correo = $request->input('correo');
-        $add->telefono = $request->input('telefono');
-        $add->localidad = $request->input('localidad');
-        $add->comentario = $request->input('comentario');
+        $add->nombre = $request->nombre;
+        $add->correo = $request->correo;
+        $add->telefono = $request->telefono;
+        $add->localidad = $request->localidad;
+        $add->comentario = $request->comentario;
 
         $add->save();
         return redirect('/');
